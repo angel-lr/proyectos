@@ -8,3 +8,22 @@ Este proyecto es una aplicación web que organiza múltiples herramientas intera
 ## Tecnologías usadas
 
 El proyecto está desarrollado utilizando HTML, CSS y JavaScript. HTML estructura las páginas y sus elementos, CSS define el diseño visual y la capacidad de alternar entre temas claro y oscuro, y JavaScript proporciona la funcionalidad interactiva necesaria para las herramientas, como cálculos dinámicos, almacenamiento en localStorage y manejo de eventos del usuario. Estas tecnologías fueron elegidas por su facilidad de integración y capacidad para construir una aplicación web funcional y responsiva.
+
+
+
+## Algunas capturas de los proyectos utilizando el modo oscuro
+
+### Página principal
+![Página Principal](image1.png)
+
+### Conversor de unidades
+![Conversor de Unidades](image2.png)
+
+### Calculadora
+![Calculadora](image3.png)
+
+### Juego del Ahorcado
+![Juego del Ahorcado](image4.png)
+
+### Resolvedor de ecuaciones lineales (Gauss-Jordan)
+![Resolvedor de Ecuaciones](image5.png)
