@@ -1,0 +1,152 @@
+
+:root {
+    --color-principal-dark: #1A4870;
+    --color-secundario-dark: #1F316F;
+    --color-dark-tres: #F9DBBA;
+
+    --color-light-uno: #D2E0FB;
+    --color-light-dos: #DEE5D4;
+    --color-light-tres: #8EACCD;
+    --color-light-cuatro: #FEF9D9;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.dark-mode{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    --color-principal-dark: #000;
+    --color-secundario-dark: #333;
+    --color-dark-tres: #666;
+
+    --color-light-uno: #888;
+    --color-light-dos: #999;
+    --color-light-tres: #BBB;
+    --color-light-cuatro: #555;
+}
+
+img {
+    width: 100%;
+}
+
+.grilla {
+    display: grid;
+
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/*HEADER -----------------------------------------------------------*/
+header {
+    grid-area: header;
+    height: 10vh;
+    background-color: var(--color-secundario-dark);
+}
+
+.container-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    padding-top: 10px;
+}
+
+.container-btn-theme {
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-btn-theme img {
+    width: 40px;
+}
+
+.container-img-header {
+    width: 50px;
+}
+
+/*MAIN-----------------------------------------------------------*/
+
+main{
+    grid-area: main;
+    min-height: 80vh;
+    background-color: var(--color-light-tres);
+}
+
+.container-img-pagina {
+    width: 100px;
+}
+
+.llamar-otras-paginas {
+    padding: 25px 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.llamar-pagina {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 30vh;
+
+    background-color: var(--color-dark-tres);
+    color: var(--color-secundario-dark);
+    box-shadow: 5px 5px 5px #000a;
+    border-radius: 20px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.llamar-pagina h2 {
+    font-size: large;
+}
+
+.llamar-pagina a{
+    display: block;
+    color: inherit;
+}
+
+.titulo-llamar-pagina {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+
+    color: var(--color-light-uno);
+    background-color: var(--color-principal-dark);
+    border-radius : 20px 20px 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*FOOTER -------------------------------------------------------*/
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+
+    background-color: var(--color-secundario-dark);
+    color: var(--color-light-uno);
+}

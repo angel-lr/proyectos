@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icono-principal.ico">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style-ahorcado.css">
+</head>
+<body>
+    <div class="grila">
+        <header>
+            <nav>
+                <div class="container-nav">
+                    <div class="container-img-header">
+                        <img src="../assets/logo_utm_blanco.png" alt="logo de la universidad">
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="titulo-pag">
+            <h1>Juego del ahorcado</h1>
+        </div>
+        <section>
+            <div class="seccion-ahorcado">
+                <div class="container-dibujo">
+                    <img src="assets/ahorcado-1.png" alt="animacion juego del ahorcado">
+                </div>
+                <div class="container-adivinanza">
+                    <h2>!!Intenta adivinar la palabra!!</h2>
+                    <div class="container-palabra">
+                    </div>
+                    <div class="container-input">
+                        <label for="letra-ingresada">Ingresa una letra :</label>
+                        <input type="text" id="letra-ingresada" autofocus>
+                        <p id="letras-erroneas">Letras equivodas : <br></p>
+                    </div>
+                    <div class="container-btn">
+                        <button id="btn-reiniciar">Nueva palabra</button>
+                    </div>
+                    <div class="container-msj-final">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© Angel López Ruíz</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

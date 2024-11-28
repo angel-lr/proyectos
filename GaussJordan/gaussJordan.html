@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icono-principal.ico">
+    <title>Resolver matriz</title>
+    <link rel="stylesheet" href="style-gauss.css">
+</head>
+<body>
+    <div class="grila">
+        <header>
+            <nav>
+                <div class="container-nav">
+                    <div class="container-img-header">
+                        <img src="../assets/logo_utm_blanco.png" alt="logo de la universidad">
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="titulo-pag">
+            <h1>Resolver matriz por medoto de Gauss-Jordan</h1>
+        </div>
+        <section class="seccion-gauss">
+            <div class="container-matriz matriz-inicio">
+                <h2>Introduce tu matriz :</h2>
+                <table class="table">
+                    <thead>
+                        <tr class="tr">
+                            <th class="th">x0</th>
+                            <th class="th">x1</th>
+                            <th class="th">x2</th>
+                            <th class="th">b</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody" id="tbody-matriz-inicio">
+                        <tr class="tr">
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                            <td class="td"><input type="number" placeholder="0.0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container-botones">
+                <button id="btn-resolver">Resolver</button>
+                <button id="btn-proceso">Mostrar proceso</button>
+                <button id="btn-borrar">Borrar</button>
+            </div>
+            <div class="container-resultado">
+                <h3>Resultado :</h3>
+                <label >
+                    x0 :
+                    <input type="number" placeholder="0.0" id="resultado-uno" readonly>
+                </label>
+                <label >
+                    x1 :
+                    <input type="number" placeholder="0.0" id="resultado-dos" readonly>
+                </label>
+                <label >
+                    x2 :
+                    <input type="number" placeholder="0.0" id="resultado-tres" readonly>
+                </label>
+            </div>
+            <div class="container-proceso">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© Angel López Ruíz</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

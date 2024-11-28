@@ -1,0 +1,233 @@
+:root {
+    --color-principal-dark: #1A4870;
+    --color-secundario-dark: #1F316F;
+    --color-dark-tres: #F9DBBA;
+
+    --color-light-uno: #B1B2FF;
+    --color-light-dos: #AAC4FF;
+    --color-light-tres: #D2DAFF;
+    --color-light-cuatro: #EEF1FF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.dark-mode{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    --color-principal-dark: #000;
+    --color-secundario-dark: #333;
+    --color-dark-tres: #666;
+
+    --color-light-uno: #888;
+    --color-light-dos: #999;
+    --color-light-tres: #BBB;
+    --color-light-cuatro: #555;
+}
+
+img {
+    width: 100%;
+}
+
+.grilla {
+    display: grid;
+
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/*HEADER -----------------------------------------------------------*/
+header {
+    grid-area: header;
+    height: 10vh;
+    background-color: var(--color-secundario-dark);
+}
+
+.container-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    padding-top: 10px;
+}
+
+.container-img-header {
+    width: 50px;
+}
+
+/*MAIN-----------------------------------------------------------*/
+
+main{
+    grid-area: main;
+    min-height: 80vh;
+    background-color: var(--color-light-tres);
+    color: var(--color-principal-dark);
+}
+
+.titulo-pag {
+    padding: 10px 0;
+    text-align: center;
+    color: var(--color-light-uno);
+    text-shadow: 1px 1px var(--color-secundario-dark);
+}
+
+.container-img-pagina {
+    width: 100px;
+}
+
+.seccion-gauss {
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.table {
+    box-shadow: 4px 4px 10px var(--color-principal-dark);
+    background-color: var(--color-dark-tres);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.tr td:nth-child(4) input {
+    background-color: var(--color-light-tres);
+}
+
+.td input{
+    background-color: var(--color-light-uno);
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+    font-size: large;
+    text-align: right;
+    width: 20vw;
+    max-width: 100px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+.container-matriz {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.container-botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.container-botones button{
+    color: var(--color-principal-dark);
+    background-color: var(--color-light-cuatro);
+    width: 100px;
+    height: 60px;
+
+    border-radius: 8px;
+    border-color: var(--color-principal-dark);
+}
+
+.container-resultado {
+    background-color: var(--color-principal-dark);
+    color: var(--color-dark-tres);
+    max-width: 420px;
+    min-width: 300px;
+    border-radius: 20px;
+    padding: 10px 0;
+    box-shadow: 4px 4px 10px var(--color-principal-dark);
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.container-resultado h3 {
+    display: block;
+}
+
+.container-resultado input{
+    background-color: #eeee;
+}
+
+.container-proceso { 
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.container-paso { 
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+} 
+
+.table-proceso {
+    text-align: center;
+    background-color: var(--color-dark-tres);
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px var(--color-principal-dark);
+    
+    opacity: 0; /* Invisible al inicio */
+    transform: translateY(20px); /* Desplazada un poco hacia abajo */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.table-proceso.visible {
+    opacity: 1; /* Hace que el elemento sea visible */
+    transform: translateY(0); /* Lo devuelve a su posición original */
+}
+
+.table-proceso td {
+    background-color: var(--color-principal-dark);
+    color: var(--color-light-cuatro);
+    min-width: 30px;
+    height: 30px;
+}
+
+.table-proceso td:nth-child(4){
+    background-color: var(--color-light-cuatro);
+    color: var(--color-principal-dark);
+}
+
+/*FOOTER -------------------------------------------------------*/
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+
+    background-color: var(--color-secundario-dark);
+    color: var(--color-light-uno);
+}

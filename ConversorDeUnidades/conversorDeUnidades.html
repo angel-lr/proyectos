@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icono-principal.ico">
+    <title>Conversor de unidades</title>
+    <link rel="stylesheet" href="style-conversor.css">
+</head>
+<body>
+    <div class="grila">
+        <header>
+            <nav>
+                <div class="container-nav">
+                    <div class="container-img-header">
+                        <img src="../assets/logo_utm_blanco.png" alt="logo de la universidad">
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="titulo-pag">
+            <h1>Conversor de unidades</h1>
+        </div>
+        <section class="seccion-conversor">
+            <div class="conversor-container">
+                <form class="form-conversor unid-longitud">
+                    <label>Longitud</label>
+                    <label for="longitud-entrada">Introduce un número :</label>
+                    <input class="input-entrada" type="number" id="longitud-entrada" placeholder="0.0" autofocus>
+                    <label>Convertir de :</label>    
+                    <select id="l-unid-entrada">
+                        <option disabled class="option-title">---- Métrico ----</option>
+                        <option value="1">Kilómetro (km)</option>
+                        <option value="2" selected>Metro (m)</option>
+                        <option value="3">Decímetro (dm)</option>
+                        <option value="4">Centímetro (cm)</option>
+                        <option value="5">Milímetro (mm)</option>
+                        <option disabled class="option-title">---- Britanico/Américano ----</option>
+                        <option value="6">Pulgada (in)</option>
+                        <option value="7">Pie (ft)</option>
+                        <option value="8">Yarda (yd)</option>
+                        <option value="9">Milla (mi)</option>
+                    </select>
+                    
+                    <label for="">a :</label>
+                    <select id="l-unid-salida">
+                        <option disabled class="option-title">---- Métrico ----</option>
+                        <option value="1">Kilómetro (km)</option>
+                        <option value="2">Metro (m)</option> 
+                        <option value="3">Decímetro (dm)</option>
+                        <option value="4">Centímetro (cm)</option>
+                        <option value="5">Milímetro (mm)</option>
+                        <option disabled class="option-title">---- Britanico/Américano ----</option>
+                        <option value="6">Pulgada (in)</option>
+                        <option value="7" selected>Pie (ft)</option>
+                        <option value="8">Yarda (yd)</option>
+                        <option value="9">Milla (mi)</option>
+                    </select>
+                    <label for="longitud-resultado">Resultado :</label>
+                    <input class="input-resultado" type="text" id="longitud-resultado" placeholder="0.0" readonly>
+                </form>
+            </div>  
+            <div class="conversor-container">
+                <form class="form-conversor unid-masa">
+                    <label>Masa</label>
+                    <label for="masa-entrada">Introduce un número :</label>
+                    <input class="input-entrada" type="number" id="masa-entrada" placeholder="0.0">
+                    <label>Convertir de :</label>    
+                    <select id="m-unid-entrada">
+                        <option disabled class="option-title">---- Métrico ----</option>
+                        <option value="1">Tonelada (t)</option>
+                        <option value="2" selected>Kilogramo (kg)</option>
+                        <option value="3">Gramo (g)</option>
+                        <option value="4">Miligramo (mg)</option>
+                        <option value="5">Nanogramo (ng)</option>
+                        <option value="6">Unidad de masa atómica (u)</option>
+                        <option disabled class="option-title">---- Avoirdupois(EE.UU.) ----</option>
+                        <option value="7">Libra (lb)</option>
+                        <option value="8">Onza</option>
+                        <option value="9">Grano (gr)</option>
+                    </select>
+                    
+                    <label for="">a :</label>
+                    <select id="m-unid-salida">
+                        <option disabled class="option-title">---- Métrico ----</option>
+                        <option value="1">Tonelada (t)</option>
+                        <option value="2">Kilogramo (kg)</option> 
+                        <option value="3">Gramo (g)</option>
+                        <option value="4">Miligramo (mg)</option>
+                        <option value="5">Nanogramo (ng)</option>
+                        <option value="6">Unidad de masa atómica (u)</option>
+                        <option disabled class="option-title">---- Avoirdupois(EE.UU.) ----</option>
+                        <option value="7" selected>Libra (lb)</option>
+                        <option value="8">Onza</option>
+                        <option value="9">Grano (gr)</option>
+                    </select>
+                    <label for="masa-resultado">Resultado :</label>
+                    <input class="input-resultado" type="text" id="masa-resultado" placeholder="0.0" readonly>
+                </form>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <p>© Angel López Ruíz</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

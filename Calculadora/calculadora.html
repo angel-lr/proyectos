@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icono-principal.ico">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style-calculadora.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="grila">
+        <header>
+            <nav>
+                <div class="container-nav">
+                    <div class="container-img-header">
+                        <img src="../assets/logo_utm_blanco.png" alt="logo de la universidad">
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section class="container-main">
+            <div class="titulo-pag">
+                <h1>Calculadora</h1>
+            </div>
+            <section class="seccion-calculadora">
+                <div class="input-cal num-anterior">
+                    <input id="inputResultado" type="text" placeholder="Resultado" readonly>
+                </div>
+                <div class="input-cal calculadora-resultado">
+                    <input id="inputCalculadora" type="text" step="any" placeholder="0.0" autofocus>
+                </div>
+                <div class="calculadora-fila">
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="7">7</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="8">8</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="9">9</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-operacion" value="/">/</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora" id="btn-borrar"><i class="bi bi-x-circle-fill"></i></button>
+                    </div>
+                </div>
+                <div class="calculadora-fila">
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="4">4</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="5">5</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="6">6</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-operacion" value="x">x</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora" id="btn-retroceder"><i class="bi bi-backspace"></i></button>
+                    </div>
+                </div>
+                <div class="calculadora-fila">
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="1">1</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="2">2</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="3">3</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-operacion" value="+">+</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-operacion" value="-">-</button>
+                    </div>
+                </div>
+                <div class="calculadora-fila">
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="(">(</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value="0">0</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value=")">)</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora btn-numero" value=".">.</button>
+                    </div>
+                    <div class="calculadora-btn">
+                        <button class="boton-calculadora" id="btn-resultado">=</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <p>© Angel López Ruíz</p>
+    </footer>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
